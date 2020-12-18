@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+      content="A web development project containing an image slideshow and an HTML form that allows users to fetch public repositories of Github">
+    <title>Github Public Repo Finder - Web Development | Carolina Dorella </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="main-container">
+
+      <!-- Slideshow -->
+      <div class="slideshow">
+
+        <!-- Images -->
+        <div class="slides">
+          <input type="radio" name="radio" id="image1" checked>
+          <input type="radio" name="radio" id="image2">
+          <input type="radio" name="radio" id="image3">
+          <div class="single-slide slide1">
+            <img src="images/image1-unsplash.jpg" alt="Dark green foliage">
+          </div>
+          <div class="single-slide">
+            <img src="images/image2-unsplash.jpg" alt="Pink sunset over the ocean">
+          </div>
+          <div class="single-slide">
+            <img src="images/image3-unsplash.jpg" alt="Blue and yellow bird resting on a log">
+          </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navigation">
+          <label for="image1" class="navigation-bar"></label>
+          <label for="image2" class="navigation-bar"></label>
+          <label for="image3" class="navigation-bar"></label>
+        </div>
+
+      </div>
+
+      <!-- Github API Section -->
+      <section class="api-container">
+
+        <!-- Form -->
+        <form class="form-submit">
+          <h2>GitHub Public Repos</h2>
+          <label>Want to see if a github user has public repos? Let's go!</label>
+          <br>
+          <input type="text" id="search" name="username" placeholder="Enter a username" required>
+          <button type="submit" class="form-btn">Ok!</button>
+        </form>
+
+        <!-- Results -->
+        <div class="results-info">
+        </div>
+
+      </section>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>
